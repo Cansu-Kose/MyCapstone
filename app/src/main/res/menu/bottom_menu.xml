@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/fashionSaleFragment"
+        android:title="Home"
+        android:icon="@drawable/homeselector"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/categoriesFragment"
+        android:title="Shop"
+        android:icon="@drawable/sptselector"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/mybagFragment"
+        android:title="Bag"
+        android:icon="@drawable/bagselector"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/favoritesFragment"
+        android:title="Favorites"
+        android:icon="@drawable/heartselector"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/myProfileFragment"
+        android:title="Profile"
+        android:icon="@drawable/profileselector"
+        app:showAsAction="ifRoom"/>
+
+</menu>

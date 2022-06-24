@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F9F9F9">
+
+    <data>
+        <variable
+            name="itemmybag"
+            type="com.example.mycapstone.presentation.mybag.MyBagModel" />
+        <variable
+            name="clickHandler"
+            type="com.example.mycapstone.presentation.categories.OnClickHandlerInterface" />
+
+        <variable
+            name="position"
+            type="Integer" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#F9F9F9">
+
+        <ImageView
+            android:id="@+id/mybag_image"
+            android:layout_width="106dp"
+            android:layout_height="101dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            app:imageResource="@{itemmybag.imageResId}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/mybag_title"
+            android:layout_width="87dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="@{itemmybag.title}"
+            android:textColor="#222222"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/mybag_price"
+            app:layout_constraintStart_toEndOf="@+id/mybag_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mybag_price"
+            android:layout_width="170dp"
+            android:layout_height="17dp"
+            android:layout_marginBottom="10dp"
+            android:text="@{itemmybag.price}"
+            android:textColor="#222222"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toTopOf="@+id/add_price"
+            app:layout_constraintEnd_toEndOf="@+id/mybag_title"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/mybag_title" />
+
+        <ImageButton
+            android:id="@+id/mybag_button"
+            android:layout_width="4dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="32dp"
+            android:background="@null"
+            android:onClick="@{(v) -> clickHandler.onClick(v,position)}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/mybag_title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.11"
+            app:srcCompat="@drawable/ic_menudot" />
+
+        <ImageView
+            android:id="@+id/plus_image"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="12dp"
+            app:imageResource="@{itemmybag.plusResId}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mybag_image"
+            app:layout_constraintTop_toBottomOf="@+id/mybag_price"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/add_price"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="@{itemmybag.pieces}"
+            android:textColor="#222222"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/minus_image"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/plus_image" />
+
+        <ImageView
+            android:id="@+id/minus_image"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="12dp"
+            app:imageResource="@{itemmybag.minusResId}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/mybag_properties"
+            app:layout_constraintTop_toTopOf="@+id/add_price"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/mybag_properties"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="12dp"
+            android:text="@{itemmybag.properties}"
+            android:textColor="#222222"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/minus_image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
