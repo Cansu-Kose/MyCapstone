@@ -94,38 +94,119 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="match_parent">
 
-                    <ImageView
-                        android:id="@+id/imageclick2"
-                        android:layout_width="170dp"
-                        android:layout_height="250dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/dressyellow1" />
 
                     <ImageView
                         android:id="@+id/imageclick3"
                         android:layout_width="170dp"
                         android:layout_height="250dp"
-                        android:layout_marginEnd="16dp"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/imageclick1"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
                         app:srcCompat="@drawable/dressclour1" />
 
                     <ImageView
                         android:id="@+id/imageclick1"
                         android:layout_width="170dp"
                         android:layout_height="250dp"
-                        android:layout_marginEnd="16dp"
                         android:layout_weight="1"
-                        app:layout_constraintBottom_toBottomOf="@+id/imageclick2"
-                        app:layout_constraintEnd_toStartOf="@+id/imageclick2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageclick4"
                         app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
                         app:srcCompat="@drawable/dressblack1" />
+
+                    <ImageView
+                        android:id="@+id/imageclick4"
+                        android:layout_width="170dp"
+                        android:layout_height="250dp"
+                        android:layout_weight="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageclick3"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/dressblack4" />
+
+
+                    <ImageView
+                        android:id="@+id/imageclick6"
+                        android:layout_width="170dp"
+                        android:layout_height="250dp"
+                        android:layout_weight="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageclick7"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/dressblack6" />
+
+                    <ImageView
+                        android:id="@+id/imageclick7"
+                        android:layout_width="170dp"
+                        android:layout_height="250dp"
+                        android:layout_weight="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageclick1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/dressblack7" />
+
+                    <ImageView
+                        android:id="@+id/imageclick8"
+                        android:layout_width="170dp"
+                        android:layout_height="250dp"
+                        android:layout_weight="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageclick6"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/dressblack8" />
+
+                    <ImageView
+                        android:id="@+id/imageclick9"
+                        android:layout_width="170dp"
+                        android:layout_height="250dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_weight="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageclick10"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/dressblack9" />
+
+                    <ImageView
+                        android:id="@+id/imageclick10"
+                        android:layout_width="170dp"
+                        android:layout_height="250dp"
+                        android:layout_weight="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageclick8"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/dressblack10" />
+
+
+                    <ImageView
+                        android:id="@+id/imageclick5"
+                        android:layout_width="170dp"
+                        android:layout_height="250dp"
+                        android:layout_weight="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageclick9"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/dressblack5" />
+
+                    <ImageView
+                        android:id="@+id/imageclick2"
+                        android:layout_width="170dp"
+                        android:layout_height="250dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageclick5"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/dressyellow1" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </HorizontalScrollView>
